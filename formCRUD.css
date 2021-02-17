@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style for header */
+header {
+  background-color: rgb(230, 130, 17);
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create 3 columns/boxes flexbox */
+/* Container for flexboxes */
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Left Side bar i.e. navigation menu*/
+nav {
+  flex: 1.5; 
+  height: auto;
+  background: rgb(204, 204, 204);
+  padding: 20px;
+}
+
+/* Style for middle bar  */
+.student {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+  background-color: #f1f1f1;
+  padding: 0px 0px 10px 0px;
+  min-height: 100vh;
+}
+
+/*Style for Retrieve Page*/
+div.scrollmenu {
+  background-color:orange;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+h1{
+  text-align: center;
+}
+
+#regtable {
+  border: black solid 1PX;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px 10px;
+}
+
+.formField{
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 50%;
+  padding: 10px 20px;
+}
+
+.formLable{
+  width: 40%;
+  margin-left: 0px;
+}
+
+.formInput {
+  width: auto;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid lightgray;
+}
+
+.formBtn {
+  display: flex;
+  padding: 10px 40%;
+  align-items: center;
+}
+
+/*right sidebar*/
+aside {
+  flex: 1.5;
+  height: auto;
+  background: #ccc;
+  padding: 20px;
+}  
+
+/* Style the footer */
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: rgb(114, 180, 70);
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+  section, form {   
+    flex-direction: column;
+    width: 100%;
+  }
+}
